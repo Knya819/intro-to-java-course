@@ -1,5 +1,9 @@
-public class BinarySearch {
-    public static int binarySearch(int[] sortedArray, int target){
+package com.cbfacademy.search;
+
+
+public class BinarySearch implements Search {
+    @Override
+    public int search(int[] sortedArray, int target){
         
         int left = 0;
         int right = sortedArray.length -1;

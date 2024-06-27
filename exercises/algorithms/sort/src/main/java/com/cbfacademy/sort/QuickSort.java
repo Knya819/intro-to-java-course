@@ -1,7 +1,7 @@
 package com.cbfacademy.sort;
 
-public class QuickSort {
-    public static void sort(int[] arr, int startIndex, int endIndex){
+public class QuickSort implements ArraySorter {
+    public  void sort(int[] arr, int startIndex, int endIndex){
         if (startIndex < endIndex){
            int pivotIndex = partition(arr, startIndex, endIndex);
             sort(arr, startIndex, pivotIndex - 1);
