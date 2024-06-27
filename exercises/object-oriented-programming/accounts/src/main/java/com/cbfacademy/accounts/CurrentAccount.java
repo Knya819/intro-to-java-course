@@ -11,10 +11,10 @@ public class CurrentAccount extends Account {
     // Override the withdraw method to allow withdrawals up to the overdraft limit
     @Override
     public double withdraw(double requested) {
-        if (requested > 0 || getBalance() - requested >= -overdraftLimit) {
-            return super.withdraw(requested);
-        } else {
+        if ( requested > getBalance() + overdraftLimit) {
             return 0;
+        } else { balance -= requested;
+            return requested;
         }
     }
 

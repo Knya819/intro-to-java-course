@@ -9,7 +9,7 @@ public class SavingsAccount extends Account {
     }
 
     public void applyInterest() {
-        double interest = getBalance() * (interestRate / 100);
+        double interest = getBalance() * interestRate ;
         deposit(interest);
     }
 
