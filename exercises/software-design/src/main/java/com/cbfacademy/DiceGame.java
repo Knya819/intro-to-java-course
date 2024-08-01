@@ -1,8 +1,8 @@
 package com.cbfacademy;
 
-public class DiceGame {
-    private DicePlayer player1;
-    private DicePlayer player2;
+public class DiceGame implements Game{
+    private Player player1;
+    private Player player2;
     private int targetScore = 30;
 
     public DiceGame() {
