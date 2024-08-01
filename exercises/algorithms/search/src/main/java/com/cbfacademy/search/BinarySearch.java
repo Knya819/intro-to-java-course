@@ -2,7 +2,7 @@ package com.cbfacademy.search;
 
 
 public class BinarySearch implements Search {
-    @Override
+    //@Override
     public int search(int[] sortedArray, int target){
         
         int left = 0;
