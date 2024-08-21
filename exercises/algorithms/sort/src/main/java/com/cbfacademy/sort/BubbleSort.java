@@ -11,7 +11,7 @@ public class BubbleSort implements ArraySorter {
             
             for (int j = 0; j < n - 1 - i; j++) {
                 if (arr[j] > arr[j + 1]) {
-                    Swap.swap(arr, j, j + 1); // here I'm calling the swap method from Swap class
+                    SortMethods.swap(arr, j, j + 1); // here I'm calling the swap method from Swap class
                     swapped = true;
                 }
             }
