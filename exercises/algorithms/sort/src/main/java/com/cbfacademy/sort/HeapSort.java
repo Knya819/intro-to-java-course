@@ -11,7 +11,7 @@ package com.cbfacademy.sort;
         // One by one extract an element from heap
         for (int i = n - 1; i > 0; i--) {
             // Move current root to end
-            Swap.swap(arr, 0, i);
+            SortMethods.swap(arr, 0, i);
 
             // call max heapify on the reduced heap
             heapify(arr, i, 0);
@@ -34,7 +34,7 @@ package com.cbfacademy.sort;
 
         // If largest is not root
         if (largest != i) {
-            Swap.swap(arr, i, largest);
+            SortMethods.swap(arr, i, largest);
 
             // Recursively heapify the affected sub-tree
             heapify(arr, n, largest);
