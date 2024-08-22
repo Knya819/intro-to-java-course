@@ -16,7 +16,7 @@ class HeapSortTest {
 
     @BeforeEach
     void setup() {
-        sorter = new QuickSort();
+        sorter = new HeapSort();
     }
 
     @ParameterizedTest
