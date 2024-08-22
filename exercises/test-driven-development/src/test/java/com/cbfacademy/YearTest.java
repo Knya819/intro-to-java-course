@@ -39,5 +39,4 @@ public class YearTest {
         Boolean result = Year.isLeap(number);
         assertEquals(expected, result);
     }
-
 }
