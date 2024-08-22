@@ -16,7 +16,7 @@ class MergeSortTest {
 
     @BeforeEach
     void setup() {
-        sorter = new QuickSort();
+        sorter = new MergeSort();
     }
 
     @ParameterizedTest
