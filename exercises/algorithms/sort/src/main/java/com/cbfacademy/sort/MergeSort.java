@@ -9,7 +9,7 @@ public class MergeSort implements ArraySorter {
             sort(arr, startIndex, midIndex);
             sort(arr, midIndex + 1, endIndex);
 
-            Merge.merge(arr, startIndex, midIndex, endIndex);
+            SortMethods.merge(arr, startIndex, midIndex, endIndex);
         }
     }
 }
