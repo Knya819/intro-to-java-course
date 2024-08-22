@@ -16,7 +16,7 @@ class BubbleSortTest {
 
     @BeforeEach
     void setup() {
-        sorter = new QuickSort();
+        sorter = new BubbleSort();
     }
 
     @ParameterizedTest
